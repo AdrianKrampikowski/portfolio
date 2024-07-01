@@ -1,0 +1,85 @@
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 109px;
+  padding: 0 10vw;
+  z-index: 4;
+}
+
+.header-logo-name {
+  font-size: 42px;
+  cursor: pointer;
+  z-index: 3;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.header-tabs {
+  display: flex;
+  gap: 5vw;
+}
+
+.tab-links {
+  text-align: center;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  min-width: 120px;
+  z-index: 2;
+  &:hover {
+    filter: invert(54%) sepia(19%) saturate(5098%) hue-rotate(358deg)
+      brightness(97%) contrast(102%);
+  }
+}
+
+.footer-burger-menu {
+  display: none;
+  z-index: 3;
+}
+
+// @media screen and (min-width: 1500px) {
+//   .header-container {
+//     padding: 0 13vw 0 10vw;
+//   }
+// }
+
+@media screen and (max-width: 1024px) {
+  .header-tabs {
+    gap: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    gap: 50px;
+  }
+
+  .header-tabs {
+    display: none;
+  }
+
+  .footer-burger-menu {
+    display: block;
+    cursor: pointer;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header-container {
+    justify-content: space-around;
+    gap: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .header-logo-name {
+    font-size: 32px;
+  }
+}

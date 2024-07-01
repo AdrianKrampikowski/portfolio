@@ -1,0 +1,14 @@
+.live-button {
+  height: 6vh;
+  width: max(85px, 10vw);
+  border-radius: 10px;
+  background-color: #ff4747;
+  font-size: max(16px, 1.5vw);
+  font-weight: 400;
+  line-height: max(18px, 2vw);
+  letter-spacing: 0em;
+  color: white;
+  &:hover {
+    background-color: #fa7902;
+  }
+}

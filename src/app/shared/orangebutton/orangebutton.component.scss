@@ -1,0 +1,22 @@
+.orange-button {
+  border-radius: 10px;
+  background-color: #fa7902;
+  color: white;
+  font-size: max(16px, 1.5vw);
+  line-height: 27.6px;
+  padding-top: max(8px, 1vw);
+  padding-right: max(16px, 2vw);
+  padding-bottom: max(8px, 1vw);
+  padding-left: max(16px, 2vw);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    background-color: #FF4747;
+    transform: scale(1.1);
+  }
+}
+
+.disabled-button {
+  background-color: grey;
+}

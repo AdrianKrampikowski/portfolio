@@ -1,0 +1,43 @@
+<div class="portfolio-container"  id="portfolio">
+    <div class="portfolio-top">
+        <div class="portfolio-title">
+            <div class="portfolio-title-line-headline-line">
+                <div class="portfolio-headline-left"></div>
+                <h1>Portfolio</h1>
+                <div class="portfolio-headline-right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-text">
+        <p>
+            Diese Webseite dient als exemplarisches Beispiel meiner Arbeit. Ich lade Sie herzlich dazu ein, diese zu
+            erkunden und sich einen Eindruck zu verschaffen.
+        </p>
+    </div>
+
+    <div class="portfolio-examples">
+        <ng-container *ngFor="let example of portfolioExamples">
+
+            <div class="portfolio-project" [ngClass]="example.alligmentClass">
+                <div class="portfolio-images">
+                    <img [src]='example.url'>
+                </div>
+                <div class="portfolio-descriptions">
+                    <h2>{{example.title}}</h2>
+                    <h3>{{example.stack}}</h3>
+                    <p>{{example.projectDescription}}</p>
+                    <div class="portfolio-buttons">
+                        <app-gitbutton text="Github" [githubButtonUrl]="example.githubLink"></app-gitbutton>
+                        <app-livebutton text="Live Test" [liveButtonUrl]="example.liveLink"></app-livebutton>
+                    </div>
+                </div>
+            </div>
+
+        </ng-container>
+    </div>
+
+    <div class="portfolio-red-shadow">
+        <img src="../../../assets/img/portfolioRedShadow.svg">
+    </div>
+
+</div>

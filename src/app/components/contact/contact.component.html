@@ -1,0 +1,107 @@
+<div class="contact-container" id="contact">
+
+    <div class="contact-line-headline">
+        <div class="contact-line"></div>
+        <h1>Kontakt</h1>
+    </div>
+
+    <div class="contact-text-inputfield">
+
+        <div class="contact-text">
+            <h3>Haben Sie ein Problem zu lösen?</h3>
+            <p>
+                Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, Sie zu hören, Ihre Ideen zu
+                kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.
+            </p>
+            <p>
+                Brauchen Sie einen Frontend-Entwickler?<strong><br>Kontaktieren Sie mich!</strong>
+            </p>
+        </div>
+
+        <div class="contact-inputfields">
+            <form (submit)="sendMail()" [formGroup]="contactForm" class="contact-form" autocomplete="off">
+
+                <!-- Name Input Field -->
+                <div class="contact-inputfield-exclamationmark">
+                    <input required="text" class="contact-input" (keypress)="checkValidName()" placeholder="Your name"
+                        name="name" formControlName="name" #nameField
+                        [ngClass]="{'greenBorder': greenBorderName === true || contactForm.controls.name.valid && contactForm.controls.name.touched && missingName == false}">
+                    <img src="../../../assets/img/redExclamationMark.svg" class="contact-red-exclamationmark"
+                        *ngIf="(contactForm.controls.name.invalid && contactForm.controls.name.touched) || missingName == true">
+                    <img src="../../../assets/img/greenCheck.svg" class="contact-red-exclamationmark"
+                        *ngIf="contactForm.controls.name.valid && contactForm.controls.name.touched && missingName == false">
+                </div>
+                <span class="contact-errors"
+                    *ngIf="(contactForm.controls.name.invalid && contactForm.controls.name.touched) || missingName == true">Dein
+                    Name wird benötigt</span>
+
+                <!-- Email Input Field -->
+                <div class="contact-inputfield-exclamationmark contact-inputfield-margin">
+                    <input required type=" text" class="contact-input" (keypress)="checkValidEmail()"
+                        placeholder="Your email" name="email" formControlName="email" #emailField
+                        [ngClass]="{'greenBorder': greenBorderEmail === true || contactForm.controls.email.valid && contactForm.controls.email.touched && missingEmail == false}">
+                    <img src="../../../assets/img/redExclamationMark.svg" class="contact-red-exclamationmark"
+                        *ngIf="(contactForm.controls.email.invalid && contactForm.controls.email.touched)  || missingEmail == true">
+                    <img src="../../../assets/img/greenCheck.svg" class="contact-red-exclamationmark"
+                        *ngIf="contactForm.controls.email.valid && contactForm.controls.email.touched  && missingEmail == false">
+                </div>
+                <span class="contact-errors"
+                    *ngIf="(contactForm.controls.email.invalid && contactForm.controls.email.touched)  || missingEmail == true">Deine
+                    Email wird benötigt</span>
+
+                <!-- Message Input Field -->
+                <div class="contact-textfield-exclamationmark contact-inputfield-margin">
+                    <textarea required class="contact-textarea" (keypress)="checkValidMessage()"
+                        placeholder="Your message" rows="10" name="message" formControlName="message" #messageField
+                        [ngClass]="{'greenBorder': greenBorderMessage === true || contactForm.controls.message.valid && contactForm.controls.message.touched && missingMessage == false}"></textarea>
+                    <img src="../../../assets/img/redExclamationMark.svg" class="contact-red-exclamationmark"
+                        *ngIf="(contactForm.controls.message.invalid && contactForm.controls.message.touched)  || missingMessage == true">
+                    <img src="../../../assets/img/greenCheck.svg" class="contact-red-exclamationmark"
+                        *ngIf="contactForm.controls.message.valid && contactForm.controls.message.touched  && missingMessage == false">
+                </div>
+                <span class="contact-errors"
+                    *ngIf="(contactForm.controls.message.invalid && contactForm.controls.message.touched)  || missingMessage == true">Dein
+                    Text ist leer</span>
+
+
+                <!-- Contact Button -->
+                <div class="contact-button" *ngIf="showMessageSent == false">
+                    <app-orangebutton text="Send message :)" [isDisabled]="changeButtonColor"></app-orangebutton>
+                </div>
+                <div class="contact-mail-sended">
+                    <div class="lds-spinner" *ngIf="showMessageSent1 == true">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="contact-mail-sended-text-img" *ngIf="showMessageSent2 == true">
+                    <p>Message sent successfully</p>
+                        <img src="../../../assets/img/greenCheck.svg" alt="">
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="contact-container-arrowup">
+                <img src="../../../assets/img/arrowUp.png" class="contact-arrowup" (click)="scrollToHeader()">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-red-shadow">
+        <img src="../../../assets/img/contactRedShadow.svg">
+    </div>
+
+
+
+</div>

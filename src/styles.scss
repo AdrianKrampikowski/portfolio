@@ -1,0 +1,75 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins";
+  background-color: #141d2f;
+  color: white;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: max(30px, 4vw);
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+  white-space: nowrap;
+
+  margin: 0;
+}
+
+p {
+  font-size: max(12px, 1vw);
+  font-weight: 400;
+  line-height: max(14px, 1.75vw);
+  letter-spacing: 0.1vw;
+  text-align: left;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    filter: invert(54%) sepia(19%) saturate(5098%) hue-rotate(358deg)
+      brightness(97%) contrast(102%);
+  }
+}
+
+.name-styled {
+  background: linear-gradient(135deg, #ff0000, #ffae00);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: max(24px, 4vw);
+  letter-spacing: 2px;
+}
+
+.space-left {
+  padding-left: 12.5vw;
+}
+
+.space-right {
+  padding-right: 12.5vw;
+}
+
+@media screen and (max-width: 425px) {
+  .space-left {
+    padding-left: 0;
+  }
+
+  .space-right {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,103 @@
+<div class="skills-container"  id="mySkills">
+
+    <div class="skills-orange-button-small-screen">
+        <app-orangebutton text="Get in Touch"></app-orangebutton>
+    </div>
+
+    <div class="skills-set-container">
+        <div class="skills-set-images" *ngFor="let skill of skills">
+            <img [src]="skill.img"> <br> <div>{{ skill.name }}</div>
+        </div>
+    </div>
+
+    <div class="skills-text-container">
+        <div class="skills-text-line">
+            <div class="skills-text">
+
+                <div class="skills-headline">
+                    <h1>Meine Skills</h1>
+                    <div class="skills-line-small-screen"></div>
+
+                </div>
+
+                <div class="skills-paragraph">
+                    <p>
+                        Im Verlauf meiner Weiterbildung habe ich meine Kompetenzen im Bereich
+                        Frontend-Entwicklung erweitert, was mich befähigte, eine Vielzahl realer Projekte erfolgreich
+                        umzusetzen.
+                    </p>
+
+                    <div class="skills-orange-button-big-screen">
+                        <app-orangebutton text="Get in Touch"></app-orangebutton>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="skills-line"></div>
+        </div>
+    </div>
+
+    <div class="skills-orange-shadow">
+        <img src="../../../assets/img/skillsOrangeShadow.svg" alt="">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="skills-container">
+
+    <div class="skills-headline-container">
+        <div class="skills-headline-line">
+            <h1>My Skills</h1>
+            <div class="skills-line"></div>
+        </div>
+        <p>
+            I have grown my frontend developments skills that
+            have allowed me to create different real projects.
+        </p>
+        <div class="skills-orange-button-big-screen">
+            <app-orangebutton text="Get in Touch"></app-orangebutton>
+        </div>
+    </div>
+
+    <div class="skills-set-container">
+        <div class="skills-images" *ngFor="let skill of skills">
+            <img [src]="skill">
+        </div>
+    </div>
+
+    <div class="skills-orange-button-small-screen">
+        <app-orangebutton text="Get in Touch"></app-orangebutton>
+    </div>
+
+    <div class="skills-orange-shadow">
+        <img src="../../../assets/img/skillsOrangeShadow.svg" alt="">
+    </div>
+</div> -->

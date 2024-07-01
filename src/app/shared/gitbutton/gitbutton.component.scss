@@ -1,0 +1,15 @@
+.git-button {
+  height: 6vh;
+  width: max(85px, 10vw);
+  border-radius: 10px;
+  border: 1px;
+  background-color: #141d2f;
+  border: 1px solid #fa7902;
+  font-size: max(16px, 1.5vw);
+  line-height: 27.6px;
+  color: white;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #fa7902;
+  }
+}

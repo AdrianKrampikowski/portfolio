@@ -1,0 +1,269 @@
+section {
+  height: calc(100vh - 109px);
+}
+
+.top-section-container {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  padding: 0 5vw;
+  gap: 12vw;
+}
+
+.top-section-images {
+  position: relative;
+  overflow: visible;
+  img {
+    position: absolute;
+  }
+}
+
+.top-section-portrait {
+  z-index: 2;
+  width: 300px;
+}
+
+.top-section-red-orange-shadow {
+  left: -150px;
+  width: 600px;
+  z-index: 1;
+}
+
+.top-section-wave {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  top: 35vh;
+  img {
+    width: 100vw;
+  }
+}
+
+.top-section-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  padding-left: 7vw;
+  z-index: 3;
+}
+
+.top-section-iam-name {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.top-section-iam {
+  position: relative;
+  left: 4%;
+  font-size: max(14px, 2.25vw);
+  transform: rotate(-90deg);
+}
+
+.top-section-name,
+.top-section-jobtitle {
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.top-section-name {
+  font-size: max(21px, 3.5vw);
+}
+.top-section-jobtitle {
+  font-size: max(18px, 3vw);
+}
+
+.top-section-jobtitle {
+  color: #ff4747;
+}
+
+.top-section-button {
+  margin: 0 auto;
+  margin-top: 6%;
+}
+
+.top-section-bottom-links {
+  position: absolute;
+  bottom: 4%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  z-index: 3;
+  width: 100%;
+  img {
+    height: max(25px, 2.5vw);
+  }
+}
+
+.top-section-bottom-line {
+  width: 10%;
+  height: 4px;
+  background-color: #ff4747;
+  z-index: 2;
+}
+
+.top-section-mail-address {
+  font-size: max(15px, 1.5vw);
+}
+
+.top-section-scroll-down-container {
+  position: absolute;
+  right: 7%;
+  bottom: 50px;
+}
+
+.top-section-scroll-down-text-img {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  gap: 5px;
+  transform: rotate(90deg);
+  img {
+    transform: rotate(-90deg);
+  }
+  &:hover {
+    filter: invert(54%) sepia(19%) saturate(5098%) hue-rotate(358deg)
+      brightness(97%) contrast(102%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-section-container {
+    justify-content: unset;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    gap: 0;
+  }
+
+  .top-section-images {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 60vh;
+      width: auto;
+      left: auto;
+    }
+  }
+
+  .top-section-text-container {
+    position: absolute;
+    padding: 0;
+    bottom: 15vh;
+    padding-right: 8vw;
+  }
+
+  .top-section-iam {
+    font-size: max(28px, 3vw);
+  }
+
+  .top-section-name {
+    font-size: max(42px, 5vw);
+  }
+
+  .top-section-jobtitle {
+    font-size: max(36px, 4vw);
+  }
+
+  .top-section-wave {
+    top: 35vh;
+  }
+
+  .top-section-mail-address,
+  .top-section-scroll-down-container {
+    display: none;
+  }
+
+  .top-section-bottom-links {
+    gap: 10vw;
+    img {
+      height: auto;
+      width: 7, 5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-section-iam {
+    font-size: max(20px, 2vw);
+  }
+
+  .top-section-name {
+    font-size: max(30px, 4vw);
+  }
+
+  .top-section-jobtitle {
+    font-size: max(25px, 3vw);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-section-iam {
+    font-size: max(14px, 1.5vw);
+  }
+
+  .top-section-name {
+    font-size: max(24px, 3vw);
+  }
+
+  .top-section-jobtitle {
+    font-size: max(17px, 2vw);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .top-section-wave {
+    top: 30vh;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .top-section-wave {
+    top: 25vh;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .top-section-wave {
+    top: 20vh;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .top-section-wave {
+    top: 15vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .top-section-wave {
+    top: 10vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .top-section-wave {
+    top: 5vh;
+  }
+}
+
+@media screen and (min-width: 1760px) {
+  .top-section-wave {
+    top: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .top-section-portrait {
+    width: 20vw;
+  }
+
+  .top-section-wave {
+    top: 0;
+  }
+}

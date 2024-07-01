@@ -1,0 +1,164 @@
+h1 {
+  font-size: max(23px, 4vw);
+}
+.skills-container {
+  position: relative;
+  display: flex;
+  padding-top: 100px;
+  padding-left: 7%;
+  gap: 5vw;
+}
+
+
+.skills-set-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(25% - 25px), 1fr));
+  gap: 25px;
+  width: 60%;
+}
+
+.skills-set-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  img {
+    max-width: max(50px, 5vw);
+    height: auto;
+    display: block;
+    transition: transform 0.125s;
+
+    &:hover {
+      transform: translateY(-14px);
+    }
+  }
+}
+
+.skills-text-container {
+  width: 50%;
+}
+
+.skills-text {
+  width: 65%;
+}
+
+.skills-headline {
+  h1 {
+    text-align: right;
+  }
+}
+
+.skills-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    text-align: right;
+  }
+}
+
+.skills-text-line {
+  display: flex;
+}
+
+.skills-orange-button-big-screen {
+  display: block;
+  padding-top: 21px;
+}
+
+.skills-orange-button-small-screen {
+  display: none;
+}
+
+.skills-line {
+  width: max(58px, 11vw);
+  height: 4px;
+  background-color: #ff4747;
+  position: absolute;
+  right: 0px;
+  margin-top: 2.6%;
+}
+
+.skills-orange-shadow {
+  position: absolute;
+  height: 50vh;
+  top: 40vh;
+  z-index: -1;
+  img {
+    position: absolute;
+    height: 100%;
+    width: 50vw;
+    left: -17vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-set-images {
+    img {
+      max-width: max(33px, 6vw);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 0;
+  }
+
+  .skills-set-container {
+    grid-template-columns: repeat(auto-fill, minmax(calc(30% - 25px), 1fr));
+    width: 85%;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .skills-text-container {
+    width: 100%;
+  }
+
+  .skills-text {
+    width: 100%;
+  }
+
+  .skills-headline {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    h1 {
+      padding-right: 12vw;
+    }
+  }
+
+  .skills-line-small-screen {
+    width: max(26px, 5vw);
+    height: 4px;
+    background-color: #ff4747;
+    position: absolute;
+    right: 0px;
+  }
+
+  .skills-paragraph {
+    padding: 0 11vw;
+    p {
+      text-align: left;
+    }
+  }
+
+  .skills-line {
+    display: none;
+  }
+
+  .skills-orange-button-big-screen {
+    display: none;
+  }
+
+  .skills-orange-button-small-screen {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+}

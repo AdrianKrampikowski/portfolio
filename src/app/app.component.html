@@ -1,0 +1,24 @@
+<app-header (displayMenuItem)="showMenuItem($event)" (imprintToggle)="imprintToggle($event)"
+    [inputNewValue]="showMenuItems"></app-header>
+<ng-container *ngIf="showMenuItems == false && showImprintItems == false">
+    <app-topsection></app-topsection>
+    <div class="visibleContainer" #visibleContainerAboutMe>
+        <app-aboutme></app-aboutme>
+    </div>
+    <div class="visibleContainer" #visibleContainerSkill>
+        <app-skills></app-skills>
+    </div>
+    <div class="visibleContainer" #visibleContainerPortfolio>
+        <app-portfolio></app-portfolio>
+    </div>
+    <div class="visibleContainer" #visibleContainerContact>
+        <app-contact></app-contact>
+    </div>
+        <app-footer (displayImprintItem)="showImprintItem($event)"></app-footer>
+</ng-container>
+
+<app-menuitems (displayMenuItem)="showMenuItem($event)" (imprintToggle)="imprintToggle($event)"
+    *ngIf="showMenuItems == true"></app-menuitems>
+
+<app-imprint (disableImprintItem)="disableImprintItem($event)" *ngIf="showImprintItems == true"></app-imprint>
+<!-- ng build --configuration "production" -->

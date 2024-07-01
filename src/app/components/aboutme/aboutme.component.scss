@@ -1,0 +1,99 @@
+.about-me-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 4;
+  height: 100%;
+  // opacity: 0;
+  // transition: opacity 2s;
+}
+
+.about-me-information {
+  padding-left: 10%;
+  padding-right: 5%;
+}
+
+.about-me-personal-things {
+  display: flex;
+  gap: 10px;
+  img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 18px;
+  }
+}
+
+.mask-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  img {
+    height: 20vw;
+    border-radius: 100%;
+    border: 2px solid #fa7902;
+  }
+}
+
+.mask-line {
+  width: 16vw;
+  height: 4px;
+  background-color: #fa7902;
+}
+
+.about-me-red-shadow {
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
+  height: 60vh;
+  width: 100%;
+  z-index: -1;
+  top: 15%;
+  img {
+    position: absolute;
+    height: 100%;
+    width: 35vw;
+    right: -5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+
+  .about-me-information {
+    padding-left: 10%;
+    padding-right: 15%;
+  }
+
+  .mask-container {
+    display: none;
+    .mask-line {
+      width: 125px;
+    }
+  }
+
+  .about-me-red-shadow {
+    top: -25%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-me-container {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .mask-container {
+    display: none;
+  }
+}
+
+.visible {
+  opacity: 1; /* Wenn die Seite sichtbar ist, ändere die Opazität auf 1 */
+}

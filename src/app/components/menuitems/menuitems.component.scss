@@ -1,0 +1,17 @@
+.menuitems-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #414856;
+  color: #ffffff;
+  gap: 35px;
+  height: calc(100vh - 109px);
+  width: 100vw;
+  div {
+    cursor: pointer;
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}
