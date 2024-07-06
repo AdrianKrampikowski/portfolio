@@ -2,15 +2,19 @@
     [inputNewValue]="showMenuItems"></app-header>
 <ng-container *ngIf="showMenuItems == false && showImprintItems == false">
     <app-topsection></app-topsection>
+    <!-- About Me -->
     <div class="visibleContainer" #visibleContainerAboutMe>
         <app-aboutme></app-aboutme>
     </div>
+    <!-- Skills -->
     <div class="visibleContainer" #visibleContainerSkill>
         <app-skills></app-skills>
     </div>
+    <!-- Portfolio -->
     <div class="visibleContainer" #visibleContainerPortfolio>
         <app-portfolio></app-portfolio>
     </div>
+    <!-- Contact  -->
     <div class="visibleContainer" #visibleContainerContact>
         <app-contact></app-contact>
     </div>
