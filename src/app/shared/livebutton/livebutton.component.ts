@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Input, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-livebutton',
@@ -7,11 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./livebutton.component.scss'],
 })
 export class LivebuttonComponent {
-  constructor() {}
-  @Input() text = '';
-  @Input() liveButtonUrl = '';
+  @Input() text: string = '';
+  @Input() liveButtonUrl: string = '';
 
-  openLiveLink() {
-    window.open(this.liveButtonUrl, '_blank');
+  constructor(@Inject(DOCUMENT) private document: Document) {}
+
+  openLiveLink(): void {
+    if (this.liveButtonUrl) {
+      this.document.defaultView?.open(this.liveButtonUrl, '_blank');
+    }
   }
 }
