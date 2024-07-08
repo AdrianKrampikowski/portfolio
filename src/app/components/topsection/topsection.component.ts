@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-topsection',
@@ -6,7 +6,7 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
   styleUrls: ['./topsection.component.scss'],
 })
 export class TopsectionComponent {
-  constructor(private renderer: Renderer2, private elRef: ElementRef) {}
+  constructor(private elRef: ElementRef) {}
 
   scrollToAboutMe(): void {
     const aboutMeElement = document.querySelector('#aboutMe');
