@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent {
   constructor() {}
   skills: any = [
     { img: 'assets/img/skillHTML.svg', name: 'HTML' },
@@ -19,5 +19,4 @@ export class SkillsComponent implements OnInit {
     { img: 'assets/img/skillFirebase.svg', name: 'Firebase' },
     { img: 'assets/img/skillMaterialDesign.svg', name: 'Material design' },
   ];
-  ngOnInit(): void {}
 }
