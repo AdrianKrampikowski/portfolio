@@ -1,4 +1,4 @@
-<div class="about-me-container" id="aboutMe" >
+<div class="about-me-container" id="aboutMe">
     <div class="about-me-information">
         <h1>Über mich</h1>
         <p>Hey, ich bin in zwei faszinierenden Berufsfeldern zuhause: Workforce-Management und Front-End-Entwicklung.
@@ -34,3 +34,22 @@
     </div>
 
 </div>
+
+<section id="slideshow">
+    <div class="entire-content">
+      <div class="content-carrousel" [ngClass]="{'paused': isDialogOpen}">
+        <figure class="shadow" *ngFor="let image of images" (click)="openDialog(image)">
+          <img [src]="image" alt="Slider Image">
+        </figure>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div id="imageModal" class="modal" [ngClass]="{'show': isDialogOpen}">
+      <div class="modal-content">
+        <span class="close" (click)="closeDialog()">&times;</span>
+        <img [src]="currentImage" alt="Dialog Image">
+      </div>
+    </div>
+  </section>
+  
