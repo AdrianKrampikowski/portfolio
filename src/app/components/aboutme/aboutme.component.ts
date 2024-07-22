@@ -20,56 +20,57 @@ export class AboutmeComponent {
       alt: 'The Woods',
       caption: 'The Woods',
     },
-    {
-      src: 'https://images.pexels.com/photos/21261/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/21261/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Cinque Terre',
-      caption: 'Cinque Terre',
-    },
-    {
-      src: 'https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Mountains and fjords',
-      caption: 'Mountains and fjords',
-    },
-    {
-      src: 'https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Northern Lights',
-      caption: 'Northern Lights',
-    },
-    {
-      src: 'https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Nature and sunrise',
-      caption: 'Nature and sunrise',
-    },
-    {
-      src: 'https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Snowy Mountains',
-      caption: 'Snowy Mountains',
-    },
-    {
-      src: 'https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Autumn Forest',
-      caption: 'Autumn Forest',
-    },
-    {
-      src: 'https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      thumb:
-        'https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
-      alt: 'Cityscape',
-      caption: 'Cityscape',
-    },
+    // {
+    //   src: 'https://images.pexels.com/photos/21261/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/21261/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Cinque Terre',
+    //   caption: 'Cinque Terre',
+    // },
+    // {
+    //   src: 'https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Mountains and fjords',
+    //   caption: 'Mountains and fjords',
+    // },
+    // {
+    //   src: 'https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Northern Lights',
+    //   caption: 'Northern Lights',
+    // },
+    // {
+    //   src: 'https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Nature and sunrise',
+    //   caption: 'Nature and sunrise',
+    // },
+    // {
+    //   src: 'https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Snowy Mountains',
+    //   caption: 'Snowy Mountains',
+    // },
+    // {
+    //   src: 'https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Autumn Forest',
+    //   caption: 'Autumn Forest',
+    // },
+    // {
+    //   src: 'https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   thumb:
+    //     'https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb',
+    //   alt: 'Cityscape',
+    //   caption: 'Cityscape',
+    // },
   ];
+
   slideIndex: number = 0;
 
   ngOnInit(): void {
