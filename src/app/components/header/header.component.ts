@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   constructor() {}
 
   showMenuItems: boolean = false;
@@ -24,7 +24,6 @@ export class HeaderComponent implements OnInit {
         });
       }
     }, 125);
-
   }
 
   ngOnChanges(): any {
@@ -35,6 +34,4 @@ export class HeaderComponent implements OnInit {
     this.showMenuItems = !this.showMenuItems;
     this.displayMenuItem.emit(this.showMenuItems);
   }
-
-  ngOnInit(): void {}
 }
