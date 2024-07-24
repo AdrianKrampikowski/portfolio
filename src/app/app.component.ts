@@ -7,6 +7,14 @@ import { disableDebugTools } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements AfterViewInit {
+  constructor() {}
+  
+  @ViewChild('visibleContainerAboutMe') visibleContainerAboutMe!: ElementRef;
+  @ViewChild('visibleContainerSkill') visibleContainerSkill!: ElementRef;
+  @ViewChild('visibleContainerPortfolio')
+  visibleContainerPortfolio!: ElementRef;
+  @ViewChild('visibleContainerContact') visibleContainerContact!: ElementRef;
+  
   title = 'myportfolio';
   showMenuItems: boolean = false;
   showImprintItems: boolean = false;
@@ -32,14 +40,6 @@ export class AppComponent implements AfterViewInit {
       this.textFunction();
     }, 250);
   }
-
-  @ViewChild('visibleContainerAboutMe') visibleContainerAboutMe!: ElementRef;
-  @ViewChild('visibleContainerSkill') visibleContainerSkill!: ElementRef;
-  @ViewChild('visibleContainerPortfolio')
-  visibleContainerPortfolio!: ElementRef;
-  @ViewChild('visibleContainerContact') visibleContainerContact!: ElementRef;
-
-  constructor() {}
 
   ngAfterViewInit() {
     this.textFunction();
