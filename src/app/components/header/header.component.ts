@@ -34,4 +34,17 @@ export class HeaderComponent {
     this.showMenuItems = !this.showMenuItems;
     this.displayMenuItem.emit(this.showMenuItems);
   }
+
+  
+// const express = require("express")
+// const router = express.Router()
+// const { getAllProducts, getSelectedProduct, getSelectedSortProducts, getSortSelectedProducts, getPagination } = require("../controller/productController")
+
+// router.route("/").get(getAllProducts)
+// router.route("/select").get(getSelectedProduct)
+// router.route("/selectsort").get(getSelectedSortProducts)
+// router.route("/sortselect").get(getSortSelectedProducts)
+// router.route("/pagination").get(getPagination)
+
+// module.exports = router
 }
