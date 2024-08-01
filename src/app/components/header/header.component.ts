@@ -34,9 +34,4 @@ export class HeaderComponent {
     this.showMenuItems = !this.showMenuItems;
     this.displayMenuItem.emit(this.showMenuItems);
   }
-
-  // showMenu() {
-  //   this.showMenuItems = !this.showMenuItems;
-  //   this.displayMenuItem.emit(this.showMenuItems);
-  // }
 }
